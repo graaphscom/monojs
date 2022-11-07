@@ -1,0 +1,34 @@
+{
+  "name": "@graaphs/eslint-config",
+  "version": "0.0.1",
+  "description": "Graaphs eslint config",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "coding standard",
+    "coding style",
+    "graaphs"
+  ],
+  "author": "Konrad Mikucki <komik966@gmail.com> (https://graaphs.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}

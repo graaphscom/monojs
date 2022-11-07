@@ -1,15 +1,19 @@
 {
   "name": "monojs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Monorepository containing JS tools used by graaphs.com projects.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["monorepo", "graaphs"],
+  "author": "Konrad Mikucki <komik966@gmail.com> (https://graaphs.com)",
+  "license": "MIT",
   "devDependencies": {
+    "@graaphs/eslint-config": "workspace:*",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
     "turbo": "^1.5.6"
   }
 }
