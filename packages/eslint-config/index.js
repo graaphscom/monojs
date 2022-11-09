@@ -1,58 +1,44 @@
+// Fix eslint shareable config (https://github.com/eslint/eslint/issues/3458)
+require("@rushstack/eslint-patch/modern-module-resolution");
+
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+    node: true,
+  },
+  extends: [
+    "eslint:all",
+    "plugin:@typescript-eslint/all",
+    "plugin:react/all",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:prettier/recommended",
+  ],
+  overrides: [
+    {
+      extends: ["plugin:jest/all", "plugin:testing-library/react"],
+      files: ["**/*.test.ts?(x)"],
+    },
+  ],
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "react", "import"],
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended",
-  ],
   rules: {
-    "@typescript-eslint/no-explicit-any": "error",
-    "no-console": "error",
-    "react/prop-types": 0,
-    "linebreak-style": ["error", "unix"],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "no-undef": "off",
-    "import/order": [
-      "error",
-      {
-        alphabetize: { order: "asc" },
-      },
-    ],
-    "react/no-array-index-key": "error",
-    "react/jsx-curly-brace-presence": [
-      "error",
-      { props: "never", children: "never" },
-    ],
-    "no-else-return": "error",
-    "no-duplicate-imports": "error",
-    "default-case": "error",
-    "default-case-last": "error",
-    "no-self-assign": "error",
-    "max-len": ["error", 150],
-    "max-lines": ["error", 250],
-    "no-empty": "error",
-    "no-trailing-spaces": "error",
-    "no-await-in-loop": "error",
-    "no-dupe-args": "error",
-    "no-irregular-whitespace": "error",
-    "no-self-compare": "error",
-    "no-array-constructor": "error",
-    "no-new-object": "error",
-    "no-var": "error",
-    "no-multiple-empty-lines": "error",
-    "react/jsx-boolean-value": ["error", "never"],
-    curly: ["error", "all"],
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
         ignoreRestSiblings: true,
       },
     ],
-    "@typescript-eslint/prefer-optional-chain": "error",
-    "@typescript-eslint/no-empty-function": 0,
+    "react/function-component-definition": [
+      "error",
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
+    ],
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
   },
 };

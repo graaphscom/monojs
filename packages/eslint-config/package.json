@@ -4,22 +4,27 @@
   "description": "Graaphs eslint config",
   "main": "index.js",
   "keywords": [
+    "graaphs",
     "eslint",
     "eslintconfig",
     "coding standard",
-    "coding style",
-    "graaphs"
+    "coding style"
   ],
   "author": "Konrad Mikucki <komik966@gmail.com> (https://graaphs.com)",
   "license": "MIT",
   "dependencies": {
+    "@next/eslint-plugin-next": "^13.0.2",
+    "@rushstack/eslint-patch": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.4",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.9.1"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
