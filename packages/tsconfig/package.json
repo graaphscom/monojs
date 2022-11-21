@@ -1,0 +1,17 @@
+{
+  "name": "@graaphs/tsconfig",
+  "version": "0.0.1",
+  "description": "Graaphs shareable TypeScript config",
+  "keywords": [
+    "graaphs",
+    "ts",
+    "typescript",
+    "tsconfig"
+  ],
+  "author": "Konrad Mikucki <komik966@gmail.com> (https://graaphs.com)",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/graaphscom/monojs",
+    "directory": "packages/tsconfig"
+  }
+}

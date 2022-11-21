@@ -1,3 +1,4 @@
+"use strict";
 // Fix eslint shareable config (https://github.com/eslint/eslint/issues/3458)
 require("@rushstack/eslint-patch/modern-module-resolution");
 
@@ -24,6 +25,9 @@ module.exports = {
     },
   ],
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: "tsconfig.json",
+  },
   plugins: ["@typescript-eslint", "react", "import"],
   rules: {
     "@typescript-eslint/no-unused-vars": [

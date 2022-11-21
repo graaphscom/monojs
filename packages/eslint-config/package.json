@@ -1,8 +1,7 @@
 {
   "name": "@graaphs/eslint-config",
   "version": "0.0.1",
-  "description": "Graaphs eslint config",
-  "main": "index.js",
+  "description": "Graaphs shareable eslint config",
   "keywords": [
     "graaphs",
     "eslint",
@@ -12,8 +11,12 @@
   ],
   "author": "Konrad Mikucki <komik966@gmail.com> (https://graaphs.com)",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/graaphscom/monojs",
+    "directory": "packages/eslint-config"
+  },
+  "main": "index.js",
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.0.2",
     "@rushstack/eslint-patch": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
