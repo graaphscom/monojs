@@ -30,10 +30,37 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react", "import"],
   rules: {
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        format: ["PascalCase", "camelCase"],
+        selector: "function",
+      },
+    ],
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
         ignoreRestSiblings: true,
+      },
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        variables: false,
+      },
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index",
+        ],
       },
     ],
     "react/function-component-definition": [
@@ -44,5 +71,6 @@ module.exports = {
       },
     ],
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
+    "sort-imports": "off",
   },
 };
