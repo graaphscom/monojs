@@ -1,2 +1,8 @@
-export { PrimaryH1 } from "./foundations/typography";
-export { fontFamily } from "./foundations/fontFamily";
+export {
+  PrimaryH1,
+  ubuntu,
+  ubuntuMonospace,
+  ubuntuCondensed,
+} from "./foundations/typography";
+
+export { trainSubway } from "./foundations/fontawesome/solid/trainSubway";

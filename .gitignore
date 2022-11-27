@@ -2,3 +2,6 @@
 node_modules
 .turbo
 .next
+.DS_Store
+
+packages/design-system/src/foundations/fontawesome-free-web

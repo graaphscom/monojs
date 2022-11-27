@@ -50,6 +50,7 @@ module.exports = {
       },
     ],
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "id-length": "off",
     "import/order": [
       "error",
       {
@@ -63,6 +64,7 @@ module.exports = {
         ],
       },
     ],
+    "no-underscore-dangle": "off",
     "react/function-component-definition": [
       "error",
       {
